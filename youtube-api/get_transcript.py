@@ -1,10 +1,12 @@
 import os
-import creds  # Assuming you have a separate file for credentials
+# import creds  # Assuming you have a separate file for credentials
 from googleapiclient.discovery import build
+
 
 def get_video_transcript(video_id):
     # Create YouTube API client
-    youtube = build('youtube', 'v3', developerKey='AIzaSyA9v06e0DT_uKWuN39swpQKKKgXtO-QLVA')
+    youtube = build('youtube', 'v3',
+                    developerKey='AIzaSyA9v06e0DT_uKWuN39swpQKKKgXtO-QLVA')
 
     # Call the API to get video details
     video_response = youtube.videos().list(
@@ -15,7 +17,7 @@ def get_video_transcript(video_id):
     # Extract transcript from video details
     if 'items' in video_response:
         video_info = video_response['items'][0]
-        
+
         # Check if captions are available for the video
         if 'contentDetails' in video_info and 'caption' in video_info['contentDetails']:
             transcript_url = video_info['contentDetails']['caption']
@@ -38,16 +40,15 @@ def get_video_transcript(video_id):
 
 
 # Example usage
-video_id = 'COv52Qyctws'
-transcript = get_video_transcript(video_id)
+if __main__ == __name__:
+    video_id = 'mJ3bGvy0WAY&t=837s'
+    transcript = get_video_transcript(video_id)
 
-if transcript:
-    print("Video Transcript:")
-    print(transcript)
-else:
-    print("Transcript not available for this video.")
-
-
+    if transcript:
+        print("Video Transcript:")
+        print(transcript)
+    else:
+        print("Transcript not available for this video.")
 
 
 # import os
