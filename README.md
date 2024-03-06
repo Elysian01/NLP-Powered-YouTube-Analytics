@@ -16,3 +16,7 @@ Open a Python console and do the following:
 >>> nltk.download()
 showing info http://nltk.github.com/nltk_data/
 ```
+
+## Dataset
+
+[Link](https://docs.google.com/spreadsheets/d/19Ovg-9q9wAAQVc9SHOT6oYHjEuG4deT_lI7yojaJajQ/edit?usp=sharing)
