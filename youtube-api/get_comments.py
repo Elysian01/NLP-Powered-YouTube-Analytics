@@ -2,7 +2,8 @@ import os
 import creds 
 from googleapiclient.discovery import build  
 
-def get_comments(no_of_comments):  
+
+def get_comments(no_of_comments, video_id='bMknfKXIFA8'):
     # Create YouTube API client  
     # credentials, project = creds.get_credentials()
 
@@ -10,8 +11,6 @@ def get_comments(no_of_comments):
     # youtube = build('youtube', 'v3', credentials=credentials)  
     youtube = build('youtube', 'v3', developerKey='AIzaSyA9v06e0DT_uKWuN39swpQKKKgXtO-QLVA')
     
-    # Set video ID  
-    video_id = '6amIq_mP4xM'  
     
     # Call the API to get comments  
     comments = []  
@@ -48,10 +47,13 @@ def get_comments(no_of_comments):
     
     # Print the comments  
     print("Number of comments: ", len(comments))  
+    # for i, comment in enumerate(comments):  
+    #     print("Comment ", i+1, " : ", comment)
     for i, comment in enumerate(comments):  
-        print("Comment ", i+1, " : ", comment)
+        print(comment)
+        print()
 
     return 
 
 # Example usage
-get_comments(10)  # Change the argument to the number of comments you want to retrieve
+get_comments(100)  # Change the argument to the number of comments you want to retrieve

@@ -1,0 +1,65 @@
+comments,sentiments,language
+"""यह वीडियो समय की बर्बादी है, मैंने कुछ नहीं सीखा""",-1,hindi
+"""This video is a waste of time, I learned nothing.""",-1,en
+"""The presenter's voice is so annoying, I couldn't concentrate.""",-1,en
+"""Terrible explanation, I'm more confused now than before watching.""",-1,en
+"""I can't believe people actually find this useful, it's just common sense.""",-1,en
+"""हे मी पाहिलेले सर्वात वाईट ट्यूटोरियल आहे, एकूण कचरा.""",-1,marathi
+"""You call this education? It's more like torture. 😒""",-1,en
+"""I've seen better explanations from a preschooler.""",-1,en
+"""video बनाना बंद करो, तुम्हें स्पष्ट रूप से कोई जानकारी नहीं है।""",-1,hindi
+"""I'd rather slam my head against a wall than watch this again 🤦‍♂️""",-1,en
+"""Unsubscribed. Can't stand this low-quality content.""",-1,en
+"""Do you even have a degree? Because it sure doesn't seem like it.""",-1,en
+"""This presenter needs to go back to school themselves.""",-1,en
+"""ನಾನು ಸಾಧ್ಯವಾದರೆ ನಾನು ಈ ವೀಡಿಯೊಗೆ ಶೂನ್ಯ ನಕ್ಷತ್ರಗಳನ್ನು ನೀಡುತ್ತೇನೆ.""",-1,kannada
+"""I'm surprised this channel has any subscribers with content like this.""",-1,en
+"""Just a bunch of jargon thrown together, no real substance.""",-1,en
+"""నేను నిద్రలో దీన్ని బాగా నేర్పించగలను.""",-1,telugu
+This tutorial is proof that some things are better left unexplained.,-1,en
+I'd rather swim with sharks than attempt Linux installation after this.,-1,en
+"This tutorial is a train wreck – horrifying, but I can't look away.",-1,en
+,,
+,,
+This video has been incredibly helpful! 😊 Thank you so much for breaking down such a complex topic.,1,en
+मैंने यह video कई बार देखा है और हर बार मुझे कुछ नया सीखने को मिलता है। अच्छा काम! 👍👍,1,hindi
+"Finally, a clear explanation on this topic! You make learning so much easier. :)",1,en
+I can't thank you enough for sharing your knowledge. Your videos are like a treasure trove of information! ,1,en
+This channel is my go-to for educational content. Keep up the fantastic work! 🌟,1,en
+"Wow, I never thought I'd understand this concept, but your video made it so clear. You're a genius! 🤯",1,en
+Your teaching style is top-notch! I feel more confident in my understanding after watching this. ,1,en
+I wish I found this channel sooner! Your videos make learning fun and engaging. ,1,en
+तेजस्वी स्पष्टीकरण! तुमच्याकडे क्लिष्ट विषय सोप्या करण्याची हातोटी आहे. 👏,1,marathi
+Thank you for making this video! It's exactly what I needed to grasp this subject. 🙏,1,en
+You're a lifesaver! Your videos have helped me ace my exams. 💯,1,en
+కేవలం ఒక వీడియో నుండి నేను ఎంత నేర్చుకున్నానో నేను నమ్మలేకపోతున్నాను. సభ్యత్వం పొందారు! 😊💻,1,telugu
+I love how thorough your explanations are. It's evident that you're passionate about teaching. ❤️,1,en
+Your enthusiasm for the subject is contagious! I'm hooked on your videos. 😄,1,en
+Excellent video! Your expertise shines through in every explanation. ✨,1,en
+I appreciate how you provide real-world examples to illustrate your points. It makes the content so much more relatable. 🌍,1,en
+You make learning feel effortless. Thank you for sharing your expertise! 📚,1,en
+ಈ ಚಾನಲ್ ಹೆಚ್ಚಿನ ಮನ್ನಣೆಗೆ ಅರ್ಹವಾಗಿದೆ. ನಿಮ್ಮ ವಿಷಯವು ಅಮೂಲ್ಯವಾಗಿದೆ. 🏆,1,kannada
+I've recommended your videos to all my classmates. They're just as impressed as I am! 😊👍,1,en
+"After watching this video, I feel like I can tackle any problem in this subject. Thank you for empowering your viewers! ",1,en
+,,
+,,
+"Can someone please tell me ...inside a button tag,when do we do onClick={someFunction} to invoke ""someFunction"" and when do we do onClick={() => someFunction}...",0,en
+Please make a series of tutorials about react-native sending data using Bluetooth.,0,en
+Can anyone tell me what are the pre- requirements for learning react native (I am a beginner),0,en
+can i start this course in 2023???,0,en
+"Hello everyone, were there any major updates since then? Are codes presented in videos still valid?",0,en
+Is it advisable to use this course in 2023??,0,en
+can you make video flatlist imageslider with background and text npm,0,en
+is this course still relevant?,0,en
+is it ok to watch it even after 4y ?,0,en
+What theme are you using on VS code?,0,en
+Please make nativescript tuts . Should be ez for you,0,en
+How to make concave image shape in react native,0,en
+"Hey, I have a question... I want to ask that before starting of react native do we need to learn javascript?",0,en
+how download pdf and save it in my app?,0,en
+what can I use to generate invoices for my cart app?,0,en
+Sir I have oop foundation. can i learn react native without react js basics. Native and js which is easier and less complex?,0,en
+Can we create react native app without using Android studio.. if i'm using my physical phone for preview,0,en
+"So, allow me to ask you this if you please: Which would you choose to build an app, RN or Flutter? What I mean is which one should I start to learn?",0,en
+What's the best choice between flutter and react native ?,0,en
+Would you do one series on laravel ?,0,en
