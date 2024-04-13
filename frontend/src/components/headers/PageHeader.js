@@ -1,15 +1,15 @@
 import React from "react";
 import "../css/misc.css";
+import logo from "../../static/logo.png";
 
-function Header() {
+function PageHeader() {
 	return (
 		<div className="header">
-			<img src="../../logo.png" alt="logo" />
+			<img src={logo} alt="logo" />
 			<div>
 				<h1 className="header-title">
 					<span>
-						NLP Powered{" "}
-						<span className="white">YouTube Analytics</span>
+						NLP Powered <span>YouTube Analytics</span>
 					</span>
 				</h1>
 			</div>
@@ -17,4 +17,4 @@ function Header() {
 	);
 }
 
-export default Header;
+export default PageHeader;

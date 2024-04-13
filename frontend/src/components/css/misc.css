@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 20px;
+    padding: 20px;
     align-items: center;
     background-color: transparent;
+    margin-bottom: 20px;
 }
 
 .header img {
@@ -29,4 +30,31 @@
 
 .white {
     color: #fff !important;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Wrapper Header*/
+/* ------------------------------------------------------------------------ */
+.wrapper-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.wrapper-header .header-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    color: var(--primary-green);
+}
+
+.wrapper-header .header-title span {
+    border-bottom: 2px solid var(--primary-green);
+    margin-bottom: 15px;
+    color: var(--primary-green);
 }

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-  --dark-bg: #0B0926;
+  --dark: #394043;
   --yellow: #FFBA32;
   --primary-green: #01A98F;
   --dark-green: #009879;
@@ -11,7 +11,7 @@
   --light-pink: #F987C5;
   --pink: #F62088;
   --gold: #FFB000;
-  --red-hover: #f85a40;
+  --orange: #f85a40;
   --black: #000000;
   --dark-red: #8b0000;
 }
@@ -23,9 +23,12 @@
   list-style: none;
   text-decoration: none;
   font-family: "Platypi", serif;
-  background-color: var(--dark-bg);
 }
 
+.bg {
+  color: #f2f2f2;
+  margin-bottom: 100px;
+}
 a {
   color: black;
 }
