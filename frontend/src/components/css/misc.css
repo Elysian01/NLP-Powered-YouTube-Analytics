@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.header img {
+    width: 100px;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+.header .header-title {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 40px auto 30px;
+    text-align: center;
+}
+
+.header .header-title span {
+    border-bottom: 2px solid var(--primary-green);
+    padding-bottom: 15px;
+    color: var(--primary-green);
+}
+
+.white {
+    color: #fff !important;
+}
