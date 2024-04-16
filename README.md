@@ -22,6 +22,20 @@ Install spaCy **en_core_web_sm** model
 ```bash
 python -m spacy download en_core_web_sm
 ```
+## Run the Project
+
+Start the Flask based server
+```bash
+python server.py
+```
+
+Start the Reactjs Server
+```bash
+cd frontend
+npm i
+npm start
+```
+
 
 ## Dataset
 
