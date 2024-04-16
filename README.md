@@ -17,6 +17,12 @@ Open a Python console and do the following:
 showing info http://nltk.github.com/nltk_data/
 ```
 
+Install spaCy 'en_core_web_sm' model
+
+``bash
+python -m spacy download en_core_web_sm
+```
+
 ## Dataset
 
 [Link](https://docs.google.com/spreadsheets/d/19Ovg-9q9wAAQVc9SHOT6oYHjEuG4deT_lI7yojaJajQ/edit?usp=sharing)
