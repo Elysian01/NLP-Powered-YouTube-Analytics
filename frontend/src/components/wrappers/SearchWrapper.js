@@ -13,7 +13,7 @@ function SearchWrapper() {
 
 	return (
 		<div className="search-wrapper">
-			<div class="input-wrapper">
+			<div className="input-wrapper">
 				<input
 					type="link"
 					placeholder="Enter YouTube Video Link"
@@ -34,8 +34,13 @@ function SearchWrapper() {
 			</div>
 			<div>
 				<button className="dark-btn">
-					<i class="fa fa-lg fa-brands fa-github"></i> &nbsp;
-					View Code
+					<a
+						href="https://github.com/Elysian01/NLP-Powered-YouTube-Analytics"
+						target="_blank"
+					>
+						<i className="fa fa-lg fa-brands fa-github"></i>{" "}
+						&nbsp; View Code
+					</a>
 				</button>
 			</div>
 		</div>

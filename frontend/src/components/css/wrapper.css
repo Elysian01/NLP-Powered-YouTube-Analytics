@@ -19,7 +19,7 @@
     max-height: 350px;
     background-color: #fff;
     padding: 30px;
-    width: 80%;
+    width: 100%;
     border-radius: 15%;
     word-wrap: break-word;
     text-align: center;
@@ -118,7 +118,7 @@
     padding: 30px;
     border-radius: 15%;
     word-wrap: break-word;
-    text-align: center;
+    /* text-align: center; */
     -webkit-box-shadow: -2px 4px 6px -6px #222;
     -moz-box-shadow: -2px 4px 6px -6px #222;
     box-shadow: -2px 4px 6px -6px #222;
@@ -140,7 +140,7 @@
 }
 
 .summarized-content {
-    color: var(--dark-red);
+    color: var(--dark);
     box-sizing: border-box;
     padding: 10px;
     font-size: 18px;
@@ -158,11 +158,11 @@
     flex-direction: row;
     justify-content: space-around;
     gap: 10%;
-    width: 90%;
+    width: 100%;
 }
 
 .search-wrapper .input-wrapper  {
-    width: 500px;
+    width: 100%;
 }
 
 .search-wrapper .input-wrapper input {
@@ -186,7 +186,7 @@
     color: #fff;
     padding: 12px 25px;
     display: block;
-    margin: auto;
+    /* margin: auto; */
     border-radius: 4px;
 }
 
@@ -195,11 +195,18 @@
     width: 200px;
     background-color: var(--dark);
     padding: 12px 30px;
-    display: block;
-    margin: auto;
+    /* display: block; */
+    /* margin: auto; */
     border: none;
     color: #fff;
     border-radius: 4px;
+}
+
+.dark-btn a {
+    color: #fff;
+}
+.dark-btn a:hover {
+    color: var(--dark);
 }
 
 .red-btn:hover{

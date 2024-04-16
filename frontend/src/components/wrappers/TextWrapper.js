@@ -8,7 +8,7 @@ function TextWrapper(props) {
 		<div className="text-wrapper" id="customScroll">
 			<WrapperHeader title={props.title} />
 			<div className="summarized-text-wrapper">
-				<div class="summarized-content">
+				<div className="summarized-content">
 					{props.summarizedContent}
 				</div>
 			</div>

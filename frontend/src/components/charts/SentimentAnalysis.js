@@ -7,31 +7,31 @@ function SentimentAnalysis() {
 	const data = [
 		{
 			id: 0,
-			value: 55,
+			value: 75,
 			label: "Positive",
 			color: "#009879",
 		},
 		{
 			id: 1,
-			value: 20,
+			value: 15,
 			label: "Neutral",
 			color: "#FFBA32",
 		},
 		{
 			id: 2,
-			value: 25,
+			value: 10,
 			label: "Negative",
-			color: "#f40d30",
+			color: "#ff6c74",
 		},
 	];
 	return (
 		<div className="sentiment-analysis-wrapper">
 			<WrapperHeader title="Sentiment Analysis" />
 			<PieChart
-				colors={["#01A98F", "#FFBA32", "#f40d30"]}
+				colors={["#01A98F", "#FFBA32", "#ff6c74"]}
 				series={[
 					{
-						arcLabel: (item) => `${item.value}`,
+						arcLabel: (item) => `${item.value} %`,
 						arcLabelMinAngle: 45,
 						data,
 						highlightScope: {
@@ -55,13 +55,13 @@ function SentimentAnalysis() {
 				// 		},
 				// 	},
 				// }}
-				// sx={{
-				// 	[`& .${pieArcLabelClasses.root}`]: {
-				// 		fill: "white",
-				// 		fontWeight: "bold",
-				// 	},
-
-				// }}
+				sx={{
+					[`& .${pieArcLabelClasses.root}`]: {
+						fill: "white",
+						fontWeight: "bold",
+						fontSize: 18,
+					},
+				}}
 			/>
 		</div>
 	);

@@ -1,9 +1,14 @@
-import os
-# import creds  # Assuming you have a separate file for credentials
 from googleapiclient.discovery import build
+from .utils import extract_video_id, get_credentials
 
 
-def get_video_transcript(video_id):
+def get_video_transcript(url, debug=False):
+
+    # video_id = "mJ3bGvy0WAY"
+    video_id = extract_video_id(url)
+    if debug:
+        print("Transcript Video ID: ", video_id)
+
     # Create YouTube API client
     youtube = build('youtube', 'v3',
                     developerKey='AIzaSyA9v06e0DT_uKWuN39swpQKKKgXtO-QLVA')
@@ -40,9 +45,11 @@ def get_video_transcript(video_id):
 
 
 # Example usage
-if __main__ == __name__:
-    video_id = 'mJ3bGvy0WAY&t=837s'
-    transcript = get_video_transcript(video_id)
+if __name__ == "__main__":
+
+    # video_id = 'mJ3bGvy0WAY'
+    url = input("Enter YouTube Video Link: ")
+    transcript = get_video_transcript(url)
 
     if transcript:
         print("Video Transcript:")
