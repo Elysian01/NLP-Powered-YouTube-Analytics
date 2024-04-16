@@ -17,9 +17,9 @@ Open a Python console and do the following:
 showing info http://nltk.github.com/nltk_data/
 ```
 
-Install spaCy 'en_core_web_sm' model
+Install spaCy **en_core_web_sm** model
 
-``bash
+```bash
 python -m spacy download en_core_web_sm
 ```
 
