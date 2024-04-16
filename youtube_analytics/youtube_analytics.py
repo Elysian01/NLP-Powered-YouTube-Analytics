@@ -5,8 +5,8 @@ from analytics import get_keywords
 from youtube_api import get_comments, get_video_transcript
 
 
-import os
-os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+import warnings
+warnings.filterwarnings("ignore")
 
 
 class YouTubeAnalytics():
