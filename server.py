@@ -37,7 +37,7 @@ def get_analytics():
         print("Requested YouTube Link: ", req['link'])
 
         # url = req['link']
-        url = "https://youtu.be/bMknfKXIFA8"
+        url = "https://www.youtube.com/watch?v=pg19Z8LL06w&t=2907s"
         no_of_comments = 100
         ya = YouTubeAnalytics(url, no_of_comments, debug=True)
         analytics = ya.get_analysis()

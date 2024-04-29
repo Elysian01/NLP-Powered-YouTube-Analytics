@@ -3,3 +3,5 @@ from youtube_analytics.analytics.preprocess_comments import *
 from youtube_analytics.analytics.sentiment_analysis import *
 from youtube_analytics.analytics.topic_modeling import *
 from youtube_analytics.analytics.transcript_summarization import *
+from youtube_analytics.analytics.comment_summarization import *
+

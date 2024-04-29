@@ -100,7 +100,8 @@ PyJWT==2.8.0
 pyparsing==3.1.1
 python-dateutil==2.8.2
 pytz==2024.1
-pywin32==306
+#pywin32==306
+#pywin32>=300,<307
 PyYAML==6.0.1
 pyzmq==25.1.2
 regex==2023.12.25
@@ -128,7 +129,7 @@ tensorboard==2.15.2
 tensorboard-data-server==0.7.2
 tensorflow==2.15.0
 tensorflow-estimator==2.15.0
-tensorflow-intel==2.15.0
+#tensorflow-intel==2.15.0
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.4.0
 textsearch==0.0.24
