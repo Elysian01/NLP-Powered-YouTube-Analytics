@@ -52,7 +52,7 @@ def get_topics(df, debug=False):
     if debug:
         print("Total Unique Topics: ", len(unique_topics_list))
         print(unique_topics_list)
-
+    return unique_topics_list
 
 if __name__ == "__main__":
     pass

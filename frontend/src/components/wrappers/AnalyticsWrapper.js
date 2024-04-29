@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/wrapper.css";
 import SearchWrapper from "./SearchWrapper";
 import SentimentAnalysis from "../charts/SentimentAnalysis";
@@ -7,70 +7,57 @@ import TextWrapper from "./TextWrapper";
 import ExtractedKeywordWrapper from "./ExtractedKeywordWrapper";
 
 function AnalyticsWrapper() {
-	const summarizedContent =
-		"Whenever we need to make use of side effects in our application, useEffect is the way to go. This hook doesn't present many complications, except for non-primitive data types, due to how JavaScript handles them. According to the official documentation, effects run after every completed render, but you can choose to fire them only when certain values have changed. This hook uses an array of dependencies: variables or states that useEffect listen to for changes. When their values change, the main body of the useEffect hook is executed. The return statement of this hook is used to clean methods that are already running, such as timers. The first time this hook is called, its main body is the one that is going to be evaluated first. All other subsequent times the hook is called, the return statement will be evaluated first, and, after that, the hook's main body. This behaviour is especially useful for cleaning code that is already running before run it again, which enable us to prevent memory leaks. There is an interesting behaviour with this hook when we use non-primitive JavaScript data types as dependencies (e.g., arrays, objects, functions). With primitive values, such as numbers and strings, we can define a variable from another variable, and they will be the same";
+  const [analyticsData, setAnalyticsData] = useState(null);
+  const [link, setLink] = useState("");
 
-	let extractedKeywords = [
-		"finding this masterpiece",
-		"React tutorial Ive",
-		"Bob Zirolls teaching",
-		"Sir Bob Ziroll",
-		"React tutorial hands",
-		"perfect react tutorial",
-		"GOOD TEACHER BOB",
-		"great job Bob",
-		"Bob Ziroll taught",
-		"react great work",
-		"Bobs teaching Helped",
-		"teaching methods Bob",
-		"make learning React",
-		"job Bob youre",
-		"enjoyed Bobs teaching",
-		"good tutorial Amazing",
-		"learn React Trust",
-		"beginner friendly react",
-		"started learning react",
-		"react video couple",
-		"Bob Ziroll",
-		"great tutorial Happy",
-		"level react skills",
-		"code GOAT Amazing",
-		"react router domreduxtoolkit",
-		"tutorial Amazing pace",
-		"Great teacher Tks",
-		"Ive finally completed",
-		"react tutorial",
-		"amazing teaching skill",
-	];
+  const fetchData = async (link) => {
+    try {
+      const response = await fetch("http://127.0.0.1:5000/get_analytics", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ link: link }),
+      });
+      const data = await response.json();
+      setAnalyticsData(data);
+    } catch (error) {
+      console.error("Error fetching analytics:", error);
+    }
+  };
 
-	extractedKeywords = extractedKeywords.slice(0, 20);
-
-	return (
-		<div className="main">
-			<div className="row">
-				<SearchWrapper />
-			</div>
-			<div className="row">
-				<ExtractedKeywordWrapper
-					extractedKeywords={extractedKeywords}
-				/>
-			</div>
-			<div className="row">
-				<SentimentAnalysis />
-				<TopicWrapper />
-			</div>
-			<div className="row">
-				<TextWrapper
-					title="Comment Summarization"
-					summarizedContent={summarizedContent}
-				/>
-				<TextWrapper
-					title="Transcribe Summarization"
-					summarizedContent={summarizedContent}
-				/>
-			</div>
-		</div>
-	);
+  return (
+    <div className="main">
+      <div className="row">
+        <SearchWrapper link={link} setLink={setLink} fetchData={fetchData} />
+      </div>
+      {analyticsData && (
+        <>
+          <div className="row">
+            <ExtractedKeywordWrapper
+              extractedKeywords={analyticsData.extracted_keywords}
+            />
+          </div>
+          <div className="row">
+            <SentimentAnalysis
+              sentimentData={analyticsData.sentiment_analysis}
+            />
+            <TopicWrapper topics={analyticsData.topics} />
+          </div>
+          <div className="row">
+            <TextWrapper
+              title="Comment Summarization"
+              summarizedContent={analyticsData.generated_comment_summary}
+            />
+            <TextWrapper
+              title="Transcribe Summarization"
+              summarizedContent={analyticsData.generated_summary}
+            />
+          </div>
+        </>
+      )}
+    </div>
+  );
 }
 
 export default AnalyticsWrapper;

@@ -49,23 +49,23 @@ class YouTubeAnalytics():
             self.analytics["transcript_available"] = False
 
         # Keyword Extraction
-        # print("Commputing Keywords ...")
-        # self.extracted_keywords = get_keywords(self.df, self.debug)
-        # self.analytics["extracted_keywords"] = self.extracted_keywords
-        # print("\n-----------------Keywords Extracted-----------------\n")
+        print("Commputing Keywords ...")
+        self.extracted_keywords = get_keywords(self.df, self.debug)
+        self.analytics["extracted_keywords"] = self.extracted_keywords
+        print("\n-----------------Keywords Extracted-----------------\n")
 
         # Sentiments Analysis
-        # print("Sentiment Analysis Started ...")
-        # self.sentiment_analysis_data = get_sentiments_of_comments(
-        #     self.df, self.debug)
-        # self.analytics["sentiment_analysis"] = self.sentiment_analysis_data
-        # print("\n-----------------Sentiment Analysis Finished-----------------\n")
+        print("Sentiment Analysis Started ...")
+        self.sentiment_analysis_data = get_sentiments_of_comments(
+            self.df, self.debug)
+        self.analytics["sentiment_analysis"] = self.sentiment_analysis_data
+        print("\n-----------------Sentiment Analysis Finished-----------------\n")
 
         # Topic Modeling
-        # print("Topic Modeling Started ...\n")
-        # self.topics = get_topics(self.df, self.debug:)
-        # self.analytics["topics"] = self.topics
-        # print("\n-----------------Topic Modeling Finished-----------------\n")
+        print("Topic Modeling Started ...\n")
+        self.topics = get_topics(self.df, self.debug)
+        self.analytics["topics"] = self.topics
+        print("\n-----------------Topic Modeling Finished-----------------\n")
 
         # Transcribe Summarization
         print("Transcribe Summarization Started ...")
