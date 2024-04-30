@@ -37,6 +37,8 @@ npm start
 ```
 
 
-## Dataset
+## Links
 
-[Link](https://docs.google.com/spreadsheets/d/19Ovg-9q9wAAQVc9SHOT6oYHjEuG4deT_lI7yojaJajQ/edit?usp=sharing)
+[Dataset](https://docs.google.com/spreadsheets/d/19Ovg-9q9wAAQVc9SHOT6oYHjEuG4deT_lI7yojaJajQ/edit?usp=sharing)
+[Report](https://docs.google.com/document/d/1WBjYbMlW2Iq_buCSvS_iXdT2j3Uz7f7lNQM_kZJp7hw/edit?usp=sharing)
+[Slides](https://docs.google.com/presentation/d/1sQjjrjBkwPi_WgRv4XcIHdtHa8g8-kIgA3fjDy42N-8/edit?usp=sharing)
