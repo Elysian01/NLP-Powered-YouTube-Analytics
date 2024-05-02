@@ -84,8 +84,6 @@ class YouTubeAnalytics():
         else:
             print("No comments available. Skipping comment summarization.\n")
 
-
-
         return self.analytics
 
 
