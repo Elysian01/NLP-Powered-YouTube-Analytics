@@ -20,6 +20,8 @@ class YouTubeAnalytics():
         self.df = None
         self.extracted_keywords = None
         self.sentiment_analysis_data = None
+        self.comment_summary = ""
+        self.transcript_summary = ""
         self.topics = None
 
     def get_analysis(self):
@@ -78,7 +80,7 @@ class YouTubeAnalytics():
         # Comment Summarization
         if not self.df.empty:  # Check if comments are available
             print("Comment Summarization Started ...")
-            self.comment_summary = generate_comment_summaries(self.df['comments'].tolist())
+            self.comment_summary = generate_comment_summaries(self.df)
             self.analytics["generated_comment_summary"] = self.comment_summary
             print("\n-----------------Comment Summarization Finished-----------------\n")
         else:
