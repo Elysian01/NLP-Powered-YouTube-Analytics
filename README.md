@@ -2,6 +2,8 @@
 
 This project aims to make it easier to evaluate YouTube videos by using advanced NLP techniques. The system will give short summaries of videos and their comments, automatically analyze sentiments and emotions, and identify key themes. This helps users make well-informed decisions about the quality and relevance of the video content.
 
+Report Link: [Click Here](https://docs.google.com/document/d/1WBjYbMlW2Iq_buCSvS_iXdT2j3Uz7f7lNQM_kZJp7hw/edit?usp=sharing)
+
 ## Project Requirements
 
 ```
